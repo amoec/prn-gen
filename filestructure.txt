@@ -1,4 +1,5 @@
 |-- .gitignore
+|-- README.md
 |-- TODO.txt
 |-- __pycache__
     |-- utils.cpython-312.pyc
@@ -12,10 +13,20 @@
 |-- data
     |-- l=127.csv
     |-- l=257.csv
+    |-- l=511.csv
     |-- l=63.csv
     |-- l=67.csv
 |-- mina_gao-2022.pdf
 |-- models
+    |-- l=1023
+        |-- K=10.pt.gz
+        |-- K=13.pt.gz
+        |-- K=15.pt.gz
+        |-- K=18.pt.gz
+        |-- K=3.pt.gz
+        |-- K=5.pt.gz
+        |-- K=7.pt.gz
+    |-- l=1031
     |-- l=127
         |-- K=10.pt
         |-- K=13.pt
@@ -33,7 +44,20 @@
         |-- K=15.pt
         |-- K=18.pt
         |-- K=20.pt
+        |-- K=25.pt
         |-- K=3.pt
+        |-- K=31.pt
+        |-- K=5.pt
+        |-- K=7.pt
+    |-- l=511
+        |-- K=10.pt
+        |-- K=13.pt
+        |-- K=15.pt
+        |-- K=18.pt
+        |-- K=20.pt
+        |-- K=25.pt.gz
+        |-- K=3.pt
+        |-- K=31.pt.gz
         |-- K=5.pt
         |-- K=7.pt
     |-- l=63
@@ -61,6 +85,14 @@
 |-- plots
     |-- eval
     |-- training
+        |-- l=1023
+            |-- K=10.png
+            |-- K=13.png
+            |-- K=15.png
+            |-- K=18.png
+            |-- K=3.png
+            |-- K=5.png
+            |-- K=7.png
         |-- l=127
             |-- K=10.png
             |-- K=13.png
@@ -73,6 +105,17 @@
             |-- K=5.png
             |-- K=7.png
         |-- l=257
+            |-- K=10.png
+            |-- K=13.png
+            |-- K=15.png
+            |-- K=18.png
+            |-- K=20.png
+            |-- K=25.png
+            |-- K=3.png
+            |-- K=31.png
+            |-- K=5.png
+            |-- K=7.png
+        |-- l=511
             |-- K=10.png
             |-- K=13.png
             |-- K=15.png
