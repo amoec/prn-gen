@@ -8,7 +8,6 @@
         |-- utils.cpython-312.pyc
     |-- evals.py
     |-- main.py
-    |-- main.py.backup
     |-- utils.py
 |-- data
     |-- l=127.csv
