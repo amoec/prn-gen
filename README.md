@@ -46,8 +46,8 @@ GNSS systems like GPS rely on PRN codes to ensure satellite signal identificatio
    ***Again, please note that this will overwrite any existing evaluation plots!***
 
 ## Results
-The NES algorithm successfully generates PRN code families with superior correlation properties compared to traditional Gold and Weil codes. For detailed results, please efer to the included research paper in the `/` directory.
-
+The NES algorithm successfully generates PRN code families with superior correlation properties compared to traditional Gold and Weil codes. For detailed results, please efer to the included research paper in the `/` directory. Note that the use of mixed precision training to reduce GPU memory utilization does negatively impact the performance of the model, with a maximum performance percentage difference between the trained models and those reported by Mina and Gao [[1]](#1) of 2.90%.
 ## References
 <a id="1">[1]</a> Mina, T. Y., and Gao, G. X., “Designing Low-Correlation GPS Spreading Codes with a Natural Evolution Strategy Machine-Learning Algorithm,” *Journal of the Institute of Navigation*, Vol. 69, No. 1, 2022. <doi:10.33012/navi.506>.
+
 <a id="2">[2]</a> McCallum, J. C., “Memory Prices 1957 - 2024,” , 2024. URL https://jcmit.net/memoryprice.htm, Accessed: 2024-09-07.

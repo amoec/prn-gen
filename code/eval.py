@@ -20,12 +20,18 @@ def main(data1, data2, case, savepath):
     --------
     None
     """
+    # Determine maximum percentage difference
+    with np.errstate(divide='ignore', invalid='ignore'):
+        diff = np.abs(data1[:, 1] - data2[:, 1]) / data2[:, 1]
+        max_diff = np.nanmax(diff) * 100
+        print(f"Maximum percentage difference for $\ell={case}$: {max_diff:.2f}%")
+
     # Plot the data
     plt.figure(figsize=(6, 6))
     plt.plot(data1[:, 0], data1[:, 1], label='Trained Model', color='blue', marker='o')
     plt.plot(data2[:, 0], data2[:, 1], label='Mina and Gao (2022)', color='red', linestyle='--', marker='x')
     plt.xlabel(r'Code family size ($K$)')
-    plt.ylabel('Normalized mean squared correlation performance')
+    plt.ylabel('Normalized performance')
     plt.title(f'Model Evaluation for $\ell={case}$')
     plt.legend()
     plt.grid()
