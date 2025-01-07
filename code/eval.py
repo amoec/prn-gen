@@ -40,7 +40,7 @@ def main(data1, data2, case, savepath):
     print(f"Plot saved at {savepath}")
 
 if __name__ == "__main__":
-    l_list = [63, 127, 511]
+    l_list = [63, 67, 127, 257, 511, 1023, 1031]
 
     for l in l_list:
         # Load the data
